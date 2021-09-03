@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body,
+html {
+    height: 100vh;
+    color: #999;
+    font-size: 16px;
+    background: #eee;
+    font-family: "open sans", sans-serif;
+}
+.giris{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    color:#000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.giris p{
+    margin-left: 5px;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+.giris .logo{
+    margin:15px;
+    width: 300px;
+    height: 300px;
+}
+.giris .git{
+    display: flex;
+    margin-left: 3px;
+}
+.giris .git p{
+    font-size: 18px;
+}
+.giris .git a{
+    text-decoration: none;
+    color:#000;
+    
+    font-size: 20px;
+    margin: 0 10px;
+}
+.giris .git a:hover{
+    color:#999;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    box-sizing: border-box;
+    padding: 0 80px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 1px 0px 2px #d3d3d3;
+}
+.header.sticky .logo {
+    background-image: url(images/logo-transparent.png);
+}
+.header.sticky .nav a {
+    color: #333;
+}
+
+.header .nav a.active {
+    background-color: #333;
+    color:#fff;
+}
+
+.header .logo {
+    background-image: url(images/beyaz.png);
+    width: 52px;
+    height: 45px;
+    background-size: cover;
+    line-height: 45px;
+}
+
+.header .nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.header .nav a:hover {
+    color: #000;
+    background-color: #eee;
+}
+
+.intro {
+    /*background-image: url(images/code.jpg);*/
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.intro img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog {
+    background-color: white;
+    margin: 80px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.hakkimda {
+    background-color: white;
+    margin: 80px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.content {
+    display: inline-block;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.blogs {
+    display: inline-block;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.blogs .baslik {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blogs i {
+    text-align: center;
+    font-size: 50px;
+    padding: 15px;
+}
+
+.blogs h3 {
+    font-size: 40px;
+    padding: 15px;
+    color: #333;
+}
+
+.blogs p {
+    margin: 10px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+.blogs img {
+    margin: 10px;
+    max-width: 700px;
+    border-radius: 3px;
+    border: 1px solid #333;
+}
+
+.blogs .hr {
+    background-color: #999;
+    margin: 30px 0;
+    height: 1px;
+}
+
+.blogs .hr-top {
+    position: relative;
+    top: -1px;
+    width: 100px;
+    height: 3px;
+    background-color: #333;
+}
+
+.content i {
+    font-size: 50px;
+    padding: 15px;
+}
+
+.content h3 {
+    font-size: 40px;
+    padding: 15px;
+    color: #333;
+}
+
+.content p {
+    padding: 10px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.hakkimda .row {
+    max-width: 100%;
+    height: 55vh;
+    background-image: url(images/hakkımda.jpg);
+    background-size: cover;
+}
+
+.iletisim {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 80px;
+    height: auto;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.iletisim .messega-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    padding: 0 80px 80px;
+    margin: 0 auto;
+}
+
+.iletisim .messega-form input,
+textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    color: #333;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.iletisim .messega-form input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+
+.iletisim .messega-form textarea {
+    height: 100px;
+}
+
+.iletisim .messega-form input:focus {
+    border: 1px solid #333;
+}
+
+.iletisim .messega-form button {
+    padding: 15px 20px;
+    width: 150px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.image i {
+    padding: 15px 15px 40px;
+    font-size: 50px;
+}
+
+.image h3 {
+    font-size: 40px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #333;
+    padding: 0 80px;
+}
+
+footer .left {
+    font-size: 20px;
+    color: #fff;
+}
+
+footer .right a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 30px;
+    color: #333;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+footer .right a:hover {
+    color: #fff;
+    background-color: #333;
+}
+.up{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color:#333;
+    background-color: #999;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+.up:hover{
+    background-color: #333;
+    color: #999;
+}
+.up.show{
+    display: block;
+}
+.down{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    animation-name: yanson;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes yanson{
+    0%{color: white;}
+    50% {color:rgba(0, 0, 0, 0);}
+}
+.down.show{
+    display: none;
+}
